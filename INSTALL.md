@@ -5,10 +5,8 @@ Drop into any project. Three steps.
 ## 1. Clone or download
 
 ```bash
-git clone --depth 1 https://github.com/<you>/audit-excellence /tmp/audit-excellence
+git clone --depth 1 https://github.com/lmovilloc-web/audit-excellence /tmp/audit-excellence
 ```
-
-(Replace `<you>` with the actual GitHub org/user once you publish.)
 
 ## 2. Copy into your project's `.claude/`
 

@@ -30,7 +30,7 @@ Six focused sub-agents (~300 tokens each) + five on-demand skills + two slash co
 
 ```bash
 # In your project root:
-git clone --depth 1 https://github.com/<you>/audit-excellence /tmp/audit-excellence
+git clone --depth 1 https://github.com/lmovilloc-web/audit-excellence /tmp/audit-excellence
 mkdir -p .claude/agents .claude/skills .claude/commands
 cp -r /tmp/audit-excellence/agents/* .claude/agents/
 cp -r /tmp/audit-excellence/skills/* .claude/skills/

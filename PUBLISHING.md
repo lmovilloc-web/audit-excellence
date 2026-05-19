@@ -40,15 +40,14 @@ GitHub will show you a "push existing repo" snippet. Adapted for our case:
 cd /Users/lukasmovillo/audit-excellence
 
 # Use SSH (preferred — no password prompts):
-git remote add origin git@github.com:<your-username>/audit-excellence.git
+git remote add origin git@github.com:lmovilloc-web/audit-excellence.git
 
 # OR HTTPS (asks for a PAT on push):
-# git remote add origin https://github.com/<your-username>/audit-excellence.git
+# git remote add origin https://github.com/lmovilloc-web/audit-excellence.git
 
 git push -u origin main
 ```
 
-Replace `<your-username>` with your actual GitHub username or org (e.g., `MAKE-IT-EASIER-SPA-CHILE`).
 
 ## Verifying it worked
 
@@ -87,11 +86,11 @@ Profile → Customize your pins → select `audit-excellence`. Free marketing fo
 
 ### 3. Update README install link
 
-The README currently says `https://github.com/<you>/audit-excellence`. Replace `<you>` with your actual username so copy-paste installs Just Work:
+The README currently says `https://github.com/lmovilloc-web/audit-excellence`. Replace `<you>` with your actual username so copy-paste installs Just Work:
 
 ```bash
 cd /Users/lukasmovillo/audit-excellence
-sed -i '' 's|https://github.com/<you>/audit-excellence|https://github.com/<your-username>/audit-excellence|g' README.md INSTALL.md
+sed -i '' 's|https://github.com/lmovilloc-web/audit-excellence|https://github.com/lmovilloc-web/audit-excellence|g' README.md INSTALL.md
 git add README.md INSTALL.md
 git commit -m "docs: replace placeholder with actual repo URL"
 git push
@@ -116,7 +115,7 @@ Add to your README a curl-based installer. Create `install.sh` at the repo root:
 cat > /Users/lukasmovillo/audit-excellence/install.sh <<'EOF'
 #!/usr/bin/env bash
 set -euo pipefail
-REPO="https://github.com/<your-username>/audit-excellence"
+REPO="https://github.com/lmovilloc-web/audit-excellence"
 TMP=$(mktemp -d)
 git clone --depth 1 "$REPO" "$TMP"
 mkdir -p .claude/agents .claude/skills .claude/commands
@@ -132,7 +131,7 @@ chmod +x /Users/lukasmovillo/audit-excellence/install.sh
 Then users can:
 
 ```bash
-curl -L https://raw.githubusercontent.com/<your-username>/audit-excellence/main/install.sh | bash
+curl -L https://raw.githubusercontent.com/lmovilloc-web/audit-excellence/main/install.sh | bash
 ```
 
 ## Authentication notes
