@@ -20,6 +20,7 @@ audit-orchestrator         ← entry point, dispatches to sub-agents
 ├── browser-auditor        ← CSP, localStorage, ITP, service worker
 ├── observability-auditor  ← RLS on error tables, ErrorBoundary, alerts
 ├── smoke-auditor          ← defines critical-path E2E tests
+├── supabase-auditor        ← Edge Functions (pinned SDKs, deployed/orphan, auth guards), cron jobs
 ├── diagnostic-helper      ← DevTools-first protocol for live incidents
 └── runbook-keeper         ← runbook freshness, post-incident updates
 ```
